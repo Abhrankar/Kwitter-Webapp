@@ -1,0 +1,210 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+	background-image: url("bg.jpg") ;
+
+	background-size: cover;
+}
+
+.header{
+	color: white;
+	font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+}
+
+.header img{
+	width: 80px;margin-left: -15px;
+}
+
+#trend{
+	color: white;
+	font-weight: bold;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	text-decoration-line: inherit;
+	font-size: 30px;
+	text-decoration: initial;
+}
+
+#see{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color: rebeccapurple;
+}
+
+#join{
+	font-family: cursive;
+	font-weight: bold;
+	color: rgb(255, 4, 4);
+}
+
+
+
+#user_name1{
+	font-style: italic;
+	font-family: Otomanopee One;
+	font-size: 25px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	background:  linear-gradient(white 0%,#b860eb 50%,  #2927ae 90%, white 99%);;
+	width: fit-content;
+	height: fit-content;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#add{
+	color: rgb(37, 0, 245);
+	font-size: 20px;
+	text-decoration: lavender;
+	text-shadow: yellow;
+	text-underline-position: below;
+	
+}
+
+#Room_names{
+	text-emphasis-color:initial;
+	font-weight: bold;
+	font-size: 50px;
+	font-family: cursive;
+}
+
+#login_button{
+	background-color: rgb(0, 174, 255);
+	color: white;
+	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	border-radius: 0px;
+}
+
+#btn{
+	background-color: rgb(58, 56, 199);
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+u{
+	color: rgb(210, 250, 250);
+}
+
+hr{
+	font-weight: bold;	
+}
+
+#user{
+	font-family: monospace, cursive;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#image2{
+	margin-top: 30px;
+	height: 120px;
+	width: 120px;
+}
+
+.login_div{
+	background: rgba(255,255,255,0.8);
+	float: none;
+	border-radius: 15px;
+}
+
+.logo
+{
+	width: 130px;
+	height: 130px;
+	margin-top: 30px;
+	border-radius: 40px;
+}
+
+#login_button{
+	width: 80%;border-radius: 15px;
+}
+
+.room_name{
+	cursor: pointer;
+	font-size: 20px;
+}
+
+#logout{
+	font-size: 20px; float: right;
+}
+
+#back{
+	font-size: 20px;
+	
+	text-align: center;
+	align-content: center;
+}
+
+#output{
+	padding: 10px; width:80%;
+	background: rgb(219, 243, 243, 0.7);border-radius: 15px;
+}
+
+.input_div_room_page{
+	width: 80%;
+}
+
+.input_div label{
+	color: white;
+	font-size: 20px;
+}
+
+.input_div_message_page{
+	position: fixed;bottom: 0px;width: 100%;
+	background:linear-gradient(#9ddbff 0%, #0559f5 100%);
+}
+
+.input_div_message_page label{
+	color: black;
+	font-size: 17px;
+	text-decoration: underline;
+	color: rgb(250, 4, 4);
+	font-weight: bold;
+	font-family: cursive;
+}
+
+.input_div_message_page #msg{
+	width: 80%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+}
+
+.input_div_message_page button{
+	font-size: 20px;
+	margin-top: 15px;
+	width: 50%; 
+	background-color: rgb(226, 43, 43);
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+}
+
+.color_white{
+	color: white
+}
+
+.user_tick{
+	width:20px;
+}
+
+.message_h4{
+	padding-left:5px;color:grey;
+}
+
+#text{
+color: rgb(5, 84, 253);
+font-size: 20px;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#name{
+	font-size: 19px;
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: cursive;
+}

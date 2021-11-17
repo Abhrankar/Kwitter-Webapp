@@ -11,3 +11,35 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+var userName = localStorage.getItem("user_name");
+document.getElementById("user_name").innerHTML = "WELCOME " + userName + " !";
+
+function addRoom() {
+  room_name = document.getElementById("room_name").value;
+  localStorage.setItem("Room Name", room_name);
+  firebase.database().ref("/").child(room_name).update({
+        purpose: "Sample"
+  });
+}
+
+function getData() {
+  firebase.database().ref("/").on('value', function (snapshot) {
+        document.getElementById("output").innerHTML = "";
+        snapshot.forEach(function (childSnapshot) {
+              childKey = childSnapshot.key;
+              room_names = childKey;
+              row = "<div class = 'room_name' id = " + room_names + " onclick = 'redirectToRoomName(this.id)'>#" + room_names + "</div><hr>";
+              document.getElementById("output").innerHTML += row;
+        });
+
+  });
+
+}
+
+getData();
+
+function redirectToRoomName(name) {
+  localStorage.setItem("room_name", name);
+  window.location = "kwitter_page.html";
+}

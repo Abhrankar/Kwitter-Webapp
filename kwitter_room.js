@@ -10,7 +10,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 var userName = localStorage.getItem("user_name");
 document.getElementById("user_name").innerHTML = "WELCOME " + userName + " !";

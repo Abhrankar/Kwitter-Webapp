@@ -18,7 +18,7 @@ userName = localStorage.getItem("user_name");
 roomName = localStorage.getItem("Room Name");
 
 function getData() {
-      firebase.database().ref("/" + room_name).on('value',
+      firebase.database().ref("/" + roomName).on('value',
             function (snapshot) {
                   document.getElementById("output").innerHTML = "";
                   snapshot.forEach(function (childSnapshot) {
@@ -54,6 +54,15 @@ function send() {
       firebase.database().ref(roomName).push({
             name: userName,
             message: msg,
-            like: 0,
+            like: 0
+      });
+}
+
+function updateLike(messageId) {
+      buttonId = messageId;
+      likes = document.getElementById(buttonId).value;
+      updatedLikes = Number(likes) + 1;
+      firebase.database().ref(roomName).child(messageId).update({
+            like: updatedLikes
       });
 }

@@ -18,7 +18,7 @@ userName = localStorage.getItem("user_name");
 roomName = localStorage.getItem("Room Name");
 
 function getData() {
-      firebase.database().ref("/" + roomName).on('value',
+      firebase.database().ref(roomName).on('value',
             function (snapshot) {
                   document.getElementById("output").innerHTML = "";
                   snapshot.forEach(function (childSnapshot) {
@@ -31,7 +31,7 @@ function getData() {
                               like = message_data["like"];
                               name_with_tag = "<h4>" + _Name + "<img class = 'user_tick' src = 'tick.png'></h4>";
                               message_with_tag = "<h4 class = 'message_h4'>" + message + "</h4>";
-                              like_button = "<button class = 'btn btn-warning' id = " + firebase_message_id + "value = " + like + " onclick = 'updateLike(this.id)'><span class = 'glyphicon glyphicon-thumbs-up'>Like: " + like + "</span></button><hr>";
+                              like_button = "<button class = 'btn btn-warning' id = '" + firebase_message_id + "'value = " + like + " onclick = 'updateLike(this.id)'><span class = 'glyphicon glyphicon-thumbs-up'>Like: " + like + "</span></button><hr>";
                               row = name_with_tag + message_with_tag + like_button;
                               document.getElementById("output").innerHTML += row;
                               //End code
